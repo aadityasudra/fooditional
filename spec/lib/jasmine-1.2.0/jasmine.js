@@ -419,7 +419,7 @@ jasmine.createSpy = function(name) {
  * @returns {Boolean}
  */
 jasmine.isSpy = function(putativeSpy) {
-  return putativeSpy && putativeSpy.isSpy;
+  return putativeSpy?.isSpy;
 };
 
 /**
