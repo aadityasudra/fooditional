@@ -84,7 +84,7 @@ jasmine.HtmlReporter = function(_doc) {
   };
 
   self.reportRunnerResults = function(runner) {
-    reporterView && reporterView.complete();
+    reporterView?.complete();
   };
 
   self.reportSuiteResults = function(suite) {
@@ -103,7 +103,7 @@ jasmine.HtmlReporter = function(_doc) {
 
   self.log = function() {
     var console = jasmine.getGlobal().console;
-    if (console && console.log) {
+    if (console?.log) {
       if (console.log.apply) {
         console.log.apply(console, arguments);
       } else {
@@ -588,7 +588,7 @@ jasmine.TrivialReporter.prototype.reportSpecResults = function(spec) {
 
 jasmine.TrivialReporter.prototype.log = function() {
   var console = jasmine.getGlobal().console;
-  if (console && console.log) {
+  if (console?.log) {
     if (console.log.apply) {
       console.log.apply(console, arguments);
     } else {
